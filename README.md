@@ -1,1 +1,1 @@
-# Maya_plugin
+# Promethean AI Maya Plugin
