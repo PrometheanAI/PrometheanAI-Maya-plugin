@@ -168,7 +168,7 @@ def command_switch(meta_command_str):
             msg = json.dumps(data_dict)
 
         elif command == 'add_objects' and len(command_list) > 1:
-            """ add a group of objects and send back a dictionary of their final dcc names
+            """ add a group of objects and send back a dictionary of how their proper dcc names
             takes a json string as input that is a dictionary with old dcc name ask key and this dict as value 
             (asset_path, name, location, rotation, scale) """
             obj_dict = json.loads(command_str.replace('add_objects ', ''))  # json str has spaces so doing this

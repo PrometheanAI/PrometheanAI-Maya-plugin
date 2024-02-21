@@ -42,7 +42,6 @@ def send_message_and_get_reply(msg, target=None):
         client_socket.connect((host, port))
         client_socket.send(msg.encode())
         client_socket.settimeout(timeout_time)
-        client_socket.shutdown(socket.SHUT_WR)
         result = client_socket.recv(2097152)
         client_socket.close()
         return result.decode()
